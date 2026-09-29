@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {HttpService} from '../HttpService/http-service';
 
 @Component({
   imports: [],
@@ -6,4 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './login.css',
   templateUrl: './login.html',
 })
-export class Login {}
+export class Login {
+  private httpService: HttpService = new HttpService();
+
+  ngOnInit() {
+    console.log(this.httpService.test());
+  }
+}
