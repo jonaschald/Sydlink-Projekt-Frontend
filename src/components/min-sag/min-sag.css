@@ -1,11 +1,8 @@
 .minsag-container {
-  width: 600px;
-  margin: auto;
-  padding: 20px;
-  text-align: left;
-  border: 1px solid #cccccc;
-  border-radius: 10px;
-  background-color: wheat;
+  min-height: 100hv;
+  background-color: #dcdcdc;
+  padding: 35px 65px 55px;
+  box-sizing: border-box;
 }
 
 .minsag-container h1 {
@@ -21,4 +18,52 @@
 
 .minsag-container textarea {
   resize: none;
+}
+
+.minsag-container table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: #bdbdbd;
+}
+
+.minsag-container table th,
+.minsag-container table td {
+  border: 1px solid #aaaaaa;
+  height: 38px;
+  padding: 0 10px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.minsag-container table th {
+  background-color: #999999;
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.minsag-container table td {
+  background-color: #bdbdbd;
+  color: #333;
+}
+
+.minsag-container table th:nth-child(1),
+.minsag-container table td:nth-child(1) {
+  width: 15%;
+}
+
+.minsag-container table th:nth-child(2),
+.minsag-container table td:nth-child(2) {
+  width: 45%;
+}
+
+.minsag-container table th:nth-child(3),
+.minsag-container table td:nth-child(3) {
+  width: 26%;
+}
+
+.minsag-container table th:nth-child(4),
+.minsag-container table td:nth-child(4) {
+  width: 14%;
 }
