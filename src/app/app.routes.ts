@@ -18,5 +18,6 @@ export const routes: Routes = [
   { path: 'profil', component: Profil },
   { path: 'support', component: Support },
   { path: 'svar', component: SvarKunde },
+
 ];
 
