@@ -1,45 +1,48 @@
-<button routerLink="/kunde">Tilbage</button>
+<div class="minsag-container">
+  <button routerLink="/kunde">Tilbage</button>
 
-<h1>Min sag</h1>
+  <h1>Min sag</h1>
 
-<div>
-  <label for="status">Status:</label>
-  <select id="status" name="status">
-    <option value="">Vælg status</option>
-    <option value="Ny">Ny</option>
-    <option value="UnderBehandling">Under behandling</option>
-    <option value="AfventerKunden">Afventer Kunden</option>
-    <option value="Løst">Løst</option>
-    <option value="Lukket">Lukket</option>
-  </select>
+  <div>
+    <label for="status">Status:</label>
+    <select id="status" name="status">
+      <option value="">Vælg status</option>
+      <option value="Ny">Ny</option>
+      <option value="UnderBehandling">Under behandling</option>
+      <option value="AfventerKunden">Afventer Kunden</option>
+      <option value="Løst">Løst</option>
+      <option value="Lukket">Lukket</option>
+    </select>
 
-  <label for="prioritet">Prioritet:</label>
-  <select id="prioritet" name="prioritet">
-    <option value="">Vælg prioritet</option>
-    <option value="Haster">Haster</option>
-    <option value="Normal">Normal</option>
-    <option value="KanVente">Kan vente</option>
-  </select>
+    <label for="prioritet">Prioritet:</label>
+    <select id="prioritet" name="prioritet">
+      <option value="">Vælg prioritet</option>
+      <option value="Haster">Haster</option>
+      <option value="Normal">Normal</option>
+      <option value="KanVente">Kan vente</option>
+    </select>
+  </div>
+
+  <div>
+    <table>
+      <tr>
+        <th>Sagsnummer</th>
+        <th>Titel</th>
+        <th>Kategori</th>
+        <th>Kunde</th>
+      </tr>
+      <tr>
+        <td>1234</td>
+        <td>Mit internet virker ikke</td>
+        <td>Internet</td>
+        <td>Olga hansen</td>
+      </tr>
+    </table>
+  </div>
+
+  <label for="beskrivelse">Beskrivelse:</label>
+  <div>
+    <textarea id="beskrivelse" name="beskrivelse" rows="10" cols="60" disabled></textarea>
+  </div>
 </div>
 
-<div>
-  <table>
-    <tr>
-      <th>Sagsnummer</th>
-      <th>Titel</th>
-      <th>Kategori</th>
-      <th>Kunde</th>
-    </tr>
-    <tr>
-      <td>1234</td>
-      <td>Mit internet virker ikke</td>
-      <td>Internet</td>
-      <td>Olga hansen</td>
-    </tr>
-  </table>
-</div>
-
-<label for="beskrivelse">Beskrivelse:</label>
-<div>
-  <textarea id="beskrivelse" name="beskrivelse" disabled></textarea>
-</div>
