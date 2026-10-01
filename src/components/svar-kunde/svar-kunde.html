@@ -1,0 +1,110 @@
+<style>
+  .tilbage-container {
+    top: 10px;
+    left: 10px;
+
+    position: absolute;
+  }
+
+  .tilbage-knap {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
+
+  .tilbage-knap img {
+    margin-right: 10px;
+  }
+
+  .svar-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: min(640px, auto);
+    padding: 40px;
+
+    background: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .svar-container h3 {
+    display: flex;
+  }
+
+  .kunde-besked-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .svar-container textarea {
+    width: 600px;
+    min-width: 300px;
+    height: 200px;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .kunde-besked {
+    background: rgba(200, 200, 200, 100%);
+    border: 1px solid rgba(180, 180, 180, 100%);
+  }
+
+  .svar-besked {
+    background: rgba(255, 255, 255, 100%);
+    border: 1px solid rgba(180, 180, 180, 100%);
+  }
+
+  .send-svar {
+    padding: 4px;
+  }
+</style>
+
+<header>
+  <div class="tilbage-container">
+
+    <button class="tilbage-knap">
+      <img ngSrc="/resources/images/back-arrow-icon.svg" alt="<-" height="16" width="16">
+      Tilbage
+    </button>
+
+  </div>
+</header>
+
+<body>
+  <div class="svar-container">
+
+    <div class="kunde-besked-container">
+      <h3>
+        Besked:
+      </h3>
+
+      <textarea readonly
+                class="kunde-besked"
+                title="Kundens besked"
+                placeholder="Henter beskeden..."></textarea>
+    </div>
+
+    <div class="svar-besked-container">
+      <h3>
+        Besvar beskeden:
+      </h3>
+
+      <textarea class="svar-besked"
+                title="Skriv dit svar her"
+                placeholder="Svar..."></textarea>
+    </div>
+
+    <button class="send-svar" style="margin-top: 20px">
+      Send
+    </button>
+
+  </div>
+</body>
