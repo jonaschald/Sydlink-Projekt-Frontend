@@ -1,0 +1,55 @@
+<div class="profil-page">
+
+  <div class="back">
+    <a routerLink="/medarbejder">← Tilbage</a>
+  </div>
+
+
+  <h1>Rediger profil</h1>
+
+
+  <div class="profil-form">
+
+    <label>Navn:</label>
+    <input
+      type="text"
+      placeholder="Navn..."
+      [(ngModel)]="navn"
+    >
+
+
+    <label>E-mail:</label>
+    <input
+      type="email"
+      [(ngModel)]="email"
+      readonly
+    >
+
+
+    <label>Nyt Kodeord:</label>
+    <input
+      type="password"
+      placeholder="Nyt Kodeord..."
+      [(ngModel)]="nytKodeord"
+    >
+
+
+    <label>Gentag nyt Kodeord:</label>
+    <input
+      type="password"
+      placeholder="Gentag Nyt Kodeord..."
+      [(ngModel)]="gentagKodeord"
+    >
+
+
+    <button
+      type="button"
+      (click)="gemProfil()"
+    >
+      Gem
+    </button>
+
+
+  </div>
+
+</div>

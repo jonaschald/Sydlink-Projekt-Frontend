@@ -1,1 +1,134 @@
-<p>medarbejder works!</p>
+<div class="medarbejder-page">
+
+  <div class="top">
+
+    <div class="welcome">
+      <h1>Velkommen Medarbejder</h1>
+    </div>
+
+    <div class="profile-links">
+      <a routerLink="/profil">Rediger profil</a>
+      <a routerLink="/">Log ud</a>
+    </div>
+
+  </div>
+
+
+  <div class="search-area">
+
+    <input
+      type="text"
+      placeholder="Søg efter sag..."
+      (input)="searchText = $any($event.target).value"
+    >
+
+    <button type="button">
+      🔍
+    </button>
+
+  </div>
+
+
+  <div class="actions">
+
+    <button type="button">
+      Beskeder
+    </button>
+
+    <button
+      type="button"
+      (click)="showAllCases()"
+    >
+      Alle sager
+    </button>
+
+  </div>
+
+
+  <section class="cases-section">
+
+    <h2>Nye sager</h2>
+
+    <table>
+
+      <thead>
+      <tr>
+        <th>Sagsnummer</th>
+        <th>Titel</th>
+        <th>Kategori</th>
+        <th>Status</th>
+        <th>Kunde</th>
+        <th>Oprettelses dato</th>
+      </tr>
+      </thead>
+
+
+      <tbody>
+
+        @if (newCases.length === 0) {
+
+          <tr>
+            <td colspan="6">
+              Ingen nye sager
+            </td>
+          </tr>
+
+        } @else {
+
+          @for (sag of newCases; track sag.id) {
+
+            <tr>
+              <td>{{ sag.caseNumber }}</td>
+              <td>{{ sag.title }}</td>
+              <td>{{ sag.category }}</td>
+              <td>{{ sag.status }}</td>
+              <td>{{ sag.customerId }}</td>
+              <td>{{ sag.createdAt }}</td>
+            </tr>
+
+          }
+
+        }
+
+      </tbody>
+
+    </table>
+
+  </section>
+
+
+  <section class="cases-section">
+
+    <h2>Mine sager</h2>
+
+    <table>
+
+      <thead>
+      <tr>
+        <th>Sagsnummer</th>
+        <th>Titel</th>
+        <th>Kategori</th>
+        <th>Status</th>
+        <th>Kunde</th>
+        <th>Oprettelses dato</th>
+      </tr>
+      </thead>
+
+
+      <tbody>
+
+      <tr>
+        <td colspan="6">
+          Ingen tildelte sager
+        </td>
+      </tr>
+
+      </tbody>
+
+
+    </table>
+
+  </section>
+
+
+</div>

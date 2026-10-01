@@ -3,19 +3,47 @@
   <h1>Login</h1>
 
   <label for="email">E-mail</label>
-  <input id="email" type="email" placeholder="E-mail">
+  <input
+    id="email"
+    type="email"
+    placeholder="E-mail"
+    (input)="email = $any($event.target).value"
+  >
 
   <label for="password">Password</label>
-  <input id="password" type="password" placeholder="Password">
-
-  <button>Login</button>
+  <input
+    id="password"
+    type="password"
+    placeholder="Password"
+    (input)="password = $any($event.target).value"
+  >
 
   <div class="role-buttons">
-    <button routerLink="/kunde">Kunde</button>
-    <button routerLink="/medarbejder">Medarbejder</button>
+
+    <button
+      type="button"
+      (click)="selectRole('Kunde')"
+    >
+      Kunde
+    </button>
+
+    <button
+      type="button"
+      (click)="selectRole('Medarbejder')"
+    >
+      Medarbejder
+    </button>
+
   </div>
+
+  @if (role) {
+    <p>Valgt rolle: {{ role }}</p>
+  }
+
+  <button type="button" (click)="login()">
+    Login
+  </button>
 
   <a href="#">Glemt password?</a>
 
 </div>
-

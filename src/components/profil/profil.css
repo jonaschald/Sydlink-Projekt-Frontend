@@ -1,0 +1,64 @@
+.profil-page {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.top {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+
+.profil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.profil-form label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.profil-form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+
+button {
+  margin-top: 25px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #555;
+}
+
+
+.back {
+  margin-bottom: 20px;
+}
+
+.back a {
+  text-decoration: none;
+  color: black;
+}

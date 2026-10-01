@@ -1,1 +1,74 @@
-<p>kunde works!</p>
+<div class="kunde-page">
+
+  <div class="top">
+
+    <div class="welcome">
+      <h1>Velkommen {{ email }}!</h1>
+    </div>
+
+    <div class="profile-area">
+      <div class="profile-links">
+        <a href="#">Rediger profil</a>
+        <a href="#">Log ud</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="actions">
+
+    <button routerLink="/opret-sag">
+      Opret Sag
+    </button>
+
+    <button>
+      Beskeder
+    </button>
+
+  </div>
+
+  <div class="cases-table">
+
+    <table>
+
+      <thead>
+      <tr>
+        <th>Sagsnummer</th>
+        <th>Titel</th>
+        <th>Status</th>
+        <th>Oprettelses dato</th>
+      </tr>
+      </thead>
+
+      <tbody>
+
+        @if (supportsager.length === 0) {
+
+          <tr>
+            <td colspan="4">
+              Ingen supportsager endnu
+            </td>
+          </tr>
+
+        } @else {
+
+          @for (sag of supportsager; track sag.id) {
+
+            <tr>
+              <td>{{ sag.caseNumber }}</td>
+              <td>{{ sag.title }}</td>
+              <td>{{ sag.status }}</td>
+              <td>{{ sag.createdAt | date:'dd/MM/yyyy' }}</td>
+            </tr>
+
+          }
+
+        }
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>

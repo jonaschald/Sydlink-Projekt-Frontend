@@ -1,0 +1,153 @@
+.medarbejder-page {
+  min-height: 100vh;
+  background-color: #dcdcdc;
+  padding: 35px 65px 55px;
+  box-sizing: border-box;
+}
+
+/* Top */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.welcome h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.profile-links {
+  display: flex;
+  gap: 22px;
+}
+
+.profile-links a {
+  color: #111;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.profile-links a:hover {
+  text-decoration: underline;
+}
+
+/* Search */
+.search-area {
+  display: flex;
+  width: 430px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+}
+
+.search-area input {
+  flex: 1;
+  height: 35px;
+  padding: 0 12px;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+}
+
+.search-area button {
+  width: 42px;
+  height: 35px;
+  border: 1px solid #c5c5c5;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #d5d5d5;
+  cursor: pointer;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.actions button {
+  padding: 9px 16px;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  background-color: #d5d5d5;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background-color: #c8c8c8;
+}
+
+/* Sections */
+.cases-section {
+  margin-bottom: 35px;
+}
+
+.cases-section h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Tables */
+.cases-section table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: #bdbdbd;
+}
+
+.cases-section th,
+.cases-section td {
+  border: 1px solid #aaaaaa;
+  height: 38px;
+  padding: 0 10px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.cases-section th {
+  background-color: #999999;
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.cases-section td {
+  background-color: #bdbdbd;
+  color: #333;
+}
+
+/* Column widths */
+.cases-section th:nth-child(1),
+.cases-section td:nth-child(1) {
+  width: 15%;
+}
+
+.cases-section th:nth-child(2),
+.cases-section td:nth-child(2) {
+  width: 23%;
+}
+
+.cases-section th:nth-child(3),
+.cases-section td:nth-child(3) {
+  width: 16%;
+}
+
+.cases-section th:nth-child(4),
+.cases-section td:nth-child(4) {
+  width: 14%;
+}
+
+.cases-section th:nth-child(5),
+.cases-section td:nth-child(5) {
+  width: 14%;
+}
+
+.cases-section th:nth-child(6),
+.cases-section td:nth-child(6) {
+  width: 18%;
+}
