@@ -3,11 +3,13 @@ import { Login } from '../components/login/login';
 import { Kunde } from '../components/kunde/kunde';
 import { Medarbejder } from '../components/medarbejder/medarbejder';
 import {Support} from '../components/support/support';
+import {SvarKunde} from '../components/svar-kunde/svar-kunde';
 
 export const routes: Routes = [
   { path: '', component: Login },
   { path: 'kunde', component: Kunde },
   { path: 'medarbejder', component: Medarbejder },
-  { path: 'support', component: Support }
+  { path: 'support', component: Support },
+  { path: 'svar', component: SvarKunde }
 ];
 
