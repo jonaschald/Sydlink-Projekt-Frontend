@@ -1,0 +1,24 @@
+.minsag-container {
+  width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  background-color: wheat;
+}
+
+.minsag-container h1 {
+  margin-bottom: 30px;
+}
+
+.minsag-container label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.minsag-container textarea {
+  resize: none;
+}
