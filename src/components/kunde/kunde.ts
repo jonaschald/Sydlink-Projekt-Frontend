@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, signal} from '@angular/core';
 import { DatePipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { HttpService } from '../../app/HttpService/http-service';
+import { HttpService } from '../../HttpService/http-service';
 @Component({
   selector: 'app-kunde',
   imports: [RouterLink, DatePipe],
@@ -10,7 +10,7 @@ import { HttpService } from '../../app/HttpService/http-service';
 })
 export class Kunde {
 
-  supportsager: any[] = [];
+  supportsager = signal<ISag[]>([]);
 
   email = '';
 
@@ -18,12 +18,14 @@ export class Kunde {
 
   ngOnInit(): void {
     this.email = localStorage.getItem('email') ?? '';
+
+    this.loadSupportCases()
   }
 
   loadSupportCases() {
     this.httpService.getSupportCases().subscribe({
       next: (data: any) => {
-        this.supportsager = data;
+        this.supportsager.set(data);
       },
       error: (error: any) => {
         console.error('Fejl ved hentning af supportsager:', error);

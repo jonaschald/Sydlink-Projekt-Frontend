@@ -19,6 +19,6 @@ export class HttpService {
   }
 
   getSupportCases() {
-    return this.http.get(`${this.apiUrl}/api/supportcases`);
+    return this.http.get<ISag[]>(`${this.apiUrl}/api/getSager`);
   }
 }

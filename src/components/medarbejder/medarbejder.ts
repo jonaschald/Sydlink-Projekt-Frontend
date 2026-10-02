@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { HttpService } from '../../app/HttpService/http-service';
+import { HttpService } from '../../HttpService/http-service';
 
 @Component({
   imports: [RouterLink],

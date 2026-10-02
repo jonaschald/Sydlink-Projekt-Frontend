@@ -42,7 +42,7 @@
 
       <tbody>
 
-        @if (supportsager.length === 0) {
+        @if (supportsager().length === 0) {
 
           <tr>
             <td colspan="4">
@@ -52,13 +52,13 @@
 
         } @else {
 
-          @for (sag of supportsager; track sag.id) {
+          @for (sag of supportsager(); track sag.sagId) {
 
             <tr>
-              <td>{{ sag.caseNumber }}</td>
-              <td>{{ sag.title }}</td>
+              <td>{{ sag.sagId }}</td>
+              <td>{{ sag.titel }}</td>
               <td>{{ sag.status }}</td>
-              <td>{{ sag.createdAt | date:'dd/MM/yyyy' }}</td>
+              <td>{{ sag.oprettet | date:'dd/MM/yyyy' }}</td>
             </tr>
 
           }
