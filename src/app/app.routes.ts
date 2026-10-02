@@ -9,6 +9,7 @@ import { MinSag } from '../components/min-sag/min-sag';
 import { OpretSag } from '../components/opret-sag/opret-sag';
 import { SvarMedarbejder } from '../components/svar-medarbejder/svar-medarbejder';
 import { NySag } from '../components/ny-sag/ny-sag';
+import { AlleSager } from '../components/alle-sager/alle-sager';
 
 export const routes: Routes = [
   { path: '', component: Login },
@@ -22,5 +23,6 @@ export const routes: Routes = [
   { path: 'support', component: Support },
   { path: 'svar', component: SvarKunde },
   { path: 'medarbejder/svar', component: SvarMedarbejder },
+  { path: 'allesager', component: AlleSager}
 ];
 
