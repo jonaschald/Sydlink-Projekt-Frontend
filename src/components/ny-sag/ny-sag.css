@@ -1,22 +1,22 @@
-.minsag-container {
+.nysag-container {
   min-height: 100hv;
   background-color: #dcdcdc;
   padding: 35px 65px 55px;
   box-sizing: border-box;
 }
 
-.minsag-container h1 {
+.nysag-container h1 {
   margin-bottom: 30px;
 }
 
-.minsag-container label {
+.nysag-container label {
   display: block;
   text-align: left;
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
-.minsag-container button {
+.nysag-container button {
   display: flex;
   gap: 14px;
   margin-bottom: 30px;
@@ -28,19 +28,19 @@
   cursor: pointer;
 }
 
-.minsag-container textarea {
+.nysag-container textarea {
   resize: none;
 }
 
-.minsag-container table {
+.nysag-container table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
   background-color: #bdbdbd;
 }
 
-.minsag-container table th,
-.minsag-container table td {
+.nysag-container table th,
+.nysag-container table td {
   border: 1px solid #aaaaaa;
   height: 38px;
   padding: 0 10px;
@@ -48,34 +48,34 @@
   box-sizing: border-box;
 }
 
-.minsag-container table th {
+.nysag-container table th {
   background-color: #999999;
   color: white;
   font-weight: normal;
   font-size: 14px;
 }
 
-.minsag-container table td {
+.nysag-container table td {
   background-color: #bdbdbd;
   color: #333;
 }
 
-.minsag-container table th:nth-child(1),
-.minsag-container table td:nth-child(1) {
+.nysag-container table th:nth-child(1),
+.nysag-container table td:nth-child(1) {
   width: 15%;
 }
 
-.minsag-container table th:nth-child(2),
-.minsag-container table td:nth-child(2) {
+.nysag-container table th:nth-child(2),
+.nysag-container table td:nth-child(2) {
   width: 45%;
 }
 
-.minsag-container table th:nth-child(3),
-.minsag-container table td:nth-child(3) {
+.nysag-container table th:nth-child(3),
+.nysag-container table td:nth-child(3) {
   width: 26%;
 }
 
-.minsag-container table th:nth-child(4),
-.minsag-container table td:nth-child(4) {
+.nysag-container table th:nth-child(4),
+.nysag-container table td:nth-child(4) {
   width: 14%;
 }

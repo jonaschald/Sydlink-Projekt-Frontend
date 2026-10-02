@@ -8,6 +8,7 @@ import { Profil } from '../components/profil/profil';
 import { MinSag } from '../components/min-sag/min-sag';
 import { OpretSag } from '../components/opret-sag/opret-sag';
 import { SvarMedarbejder } from '../components/svar-medarbejder/svar-medarbejder';
+import { NySag } from '../components/ny-sag/ny-sag';
 
 export const routes: Routes = [
   { path: '', component: Login },
@@ -15,6 +16,7 @@ export const routes: Routes = [
   { path: 'medarbejder', component: Medarbejder },
   { path: 'profil', component: Profil },
   { path: 'minsag', component: MinSag },
+  { path: 'nysag', component: NySag },
   { path: 'opretsag', component: OpretSag },
   { path: 'profil', component: Profil },
   { path: 'support', component: Support },
