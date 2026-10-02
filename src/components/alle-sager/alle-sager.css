@@ -1,0 +1,108 @@
+/* Search */
+.search-area {
+  display: flex;
+  width: 430px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+}
+
+.search-area input {
+  flex: 1;
+  height: 35px;
+  padding: 0 12px;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+}
+
+.search-area button {
+  width: 42px;
+  height: 35px;
+  border: 1px solid #c5c5c5;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #d5d5d5;
+  cursor: pointer;
+}
+
+.allesager-container button {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  padding: 9px 16px;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  background-color: #d5d5d5;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.allesager-container {
+  min-height: 100hv;
+  background-color: #dcdcdc;
+  padding: 35px 65px 55px;
+  box-sizing: border-box;
+}
+
+.allesager-container table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: #bdbdbd;
+}
+
+.allesager-container table th,
+.allesager-container table td {
+  border: 1px solid #aaaaaa;
+  height: 38px;
+  padding: 0 10px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.allesager-container table th {
+  background-color: #999999;
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.allesager-container table td {
+  background-color: #bdbdbd;
+  color: #333;
+}
+
+.allesager-container table th:nth-child(1),
+.allesager-container table td:nth-child(1) {
+  width: 14%;
+}
+
+.allesager-container table th:nth-child(2),
+.allesager-container table td:nth-child(2) {
+  width: 14%;
+}
+
+.allesager-container table th:nth-child(3),
+.allesager-container table td:nth-child(3) {
+  width: 14%;
+}
+
+.allesager-container table th:nth-child(4),
+.allesager-container table td:nth-child(4) {
+  width: 14%;
+}
+.allesager-container table th:nth-child(5),
+.allesager-container table td:nth-child(5) {
+  width: 14%;
+}
+
+.allesager-container table th:nth-child(6),
+.allesager-container table td:nth-child(6) {
+  width: 14%;
+}
+
+.allesager-container table th:nth-child(7),
+.allesager-container table td:nth-child(7) {
+  width: 14%;
+}
