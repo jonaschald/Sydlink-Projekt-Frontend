@@ -2,7 +2,6 @@
   .tilbage-container {
     top: 10px;
     left: 10px;
-
     position: absolute;
   }
 
@@ -61,66 +60,107 @@
 <header>
   <div class="tilbage-container">
 
-    <button class="tilbage-knap">
-      <img ngSrc="/resources/images/back-arrow-icon.svg" alt="<-" height="16" width="16">
+    <button class="tilbage-knap" routerLink="/svar">
+      <img
+        ngSrc="/resources/images/back-arrow-icon.svg"
+        alt="<-"
+        height="16"
+        width="16"
+      >
       Tilbage
     </button>
 
   </div>
 </header>
+
 <body>
-  <div class="support-container">
 
-    <h1 class="Titel">
-      Kontakt SydLink
-    </h1>
+<div class="support-container">
 
-    <div class="form">
+  <h1 class="Titel">
+    Kontakt SydLink
+  </h1>
 
-  <!--    Navn form-->
+  <div class="form">
+
+    <!-- Navn -->
+    <h3>
+      Navn: <span style="color: red"><sup>*</sup></span>
+    </h3>
+
+    <input
+      type="text"
+      class="navn-input"
+      title="Indtast dit navn her"
+      placeholder="Navn her..."
+      [(ngModel)]="navn"
+    >
+
+    <!-- E-mail -->
+    <h3>
+      E-mail: <span style="color: red"><sup>*</sup></span>
+    </h3>
+
+    <input
+      type="email"
+      class="email-input"
+      title="Indtast din email her"
+      placeholder="Email her..."
+      [(ngModel)]="email"
+    >
+
+    <!-- Titel -->
+    <h3>
+      Titel: <span style="color: red"><sup>*</sup></span>
+    </h3>
+
+    <input
+      type="text"
+      class="titel-input"
+      title="Indtast titlen af dit subjekt her"
+      placeholder="Titel her..."
+      [(ngModel)]="titel"
+    >
+
+    <!-- Sagsnummer -->
+    <h3>
+      Sagsnummer: <span style="color: red"><sup>*</sup></span>
+    </h3>
+
+    <input
+      type="text"
+      class="sagsnummer-input"
+      title="Indtast dit sagsnummer her"
+      placeholder="Sagsnummer her..."
+      [(ngModel)]="sagsnummer"
+    >
+
+    <!-- Beskrivelse -->
+    <div class="beskrivelses-form">
+
       <h3>
-        Navn: <span style="color: red"><sup>*</sup></span>
+        Beskrivelse: <span style="color: red"><sup>*</sup></span>
       </h3>
 
-      <input type="text" class="navn-input" title="Indtast dit navn her" placeholder="Navn her...">
-
-  <!--    Email form-->
-      <h3>
-        E-mail: <span style="color: red"><sup>*</sup></span>
-      </h3>
-
-      <input type="email" class="email-input" title="Indtast din email her" placeholder="Email her...">
-
-  <!--    Titel form-->
-      <h3>
-        Titel: <span style="color: red"><sup>*</sup></span>
-      </h3>
-
-      <input type="text" class="titel-input" title="Indtast titlen af dit subjekt her" placeholder="Titel her...">
-
-  <!--    Sagsnummer form-->
-      <h3>
-        Sagsnummer: <span style="color: red"><sup>*</sup></span>
-      </h3>
-
-      <input type="text" class="sagsnummer-input" title="Indtast dit sagsnummer her" placeholder="Sagsnummer her...">
-
-  <!--    Beskrivelse form-->
-      <div class="beskrivelses-form">
-        <h3>
-          Beskrivelse: <span style="color: red"><sup>*</sup></span>
-        </h3>
-
-        <textarea class="beskrivelse-input"
-                  title="Beskriv hvorfor du vil kontake os her"
-                  placeholder="Beskrivelse her..."></textarea>
-      </div>
+      <textarea
+        class="beskrivelse-input"
+        title="Beskriv hvorfor du vil kontakte os her"
+        placeholder="Beskrivelse her..."
+        [(ngModel)]="beskrivelse"
+      ></textarea>
 
     </div>
 
-    <button class="send" style="margin-top: 20px">
-      Send
-    </button>
-
   </div>
+
+  <button
+    class="send"
+    style="margin-top: 20px"
+    (click)="send()"
+  >
+    Send
+  </button>
+
+</div>
+
 </body>

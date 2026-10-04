@@ -21,4 +21,12 @@ export class HttpService {
   getSupportCases() {
     return this.http.get<ISag[]>(`${this.apiUrl}/api/getSager`);
   }
+
+  createBesked(besked: any) {
+    return this.http.post(`${this.apiUrl}/api/Besked`, besked);
+  }
+
+  getBeskeder() {
+    return this.http.get<any[]>(`${this.apiUrl}/api/Besked`);
+  }
 }

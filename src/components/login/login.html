@@ -3,20 +3,24 @@
   <h1>Login</h1>
 
   <label for="email">E-mail</label>
+
   <input
     id="email"
     type="email"
     placeholder="E-mail"
-    (input)="email = $any($event.target).value"
+    [(ngModel)]="email"
   >
 
+
   <label for="password">Password</label>
+
   <input
     id="password"
     type="password"
     placeholder="Password"
-    (input)="password = $any($event.target).value"
+    [(ngModel)]="password"
   >
+
 
   <div class="role-buttons">
 
@@ -36,14 +40,22 @@
 
   </div>
 
+
   @if (role) {
     <p>Valgt rolle: {{ role }}</p>
   }
 
-  <button type="button" (click)="login()">
+
+  <button
+    type="button"
+    (click)="login()"
+  >
     Login
   </button>
 
-  <a href="#">Glemt password?</a>
+
+  <a routerLink="/glemt-password">
+    Glemt password?
+  </a>
 
 </div>

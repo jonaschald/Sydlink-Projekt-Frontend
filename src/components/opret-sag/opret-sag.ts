@@ -8,3 +8,4 @@ import { RouterLink } from '@angular/router';
   templateUrl: './opret-sag.html',
 })
 export class OpretSag {}
+

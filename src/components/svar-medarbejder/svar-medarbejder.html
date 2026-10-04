@@ -2,7 +2,6 @@
   .tilbage-container {
     top: 10px;
     left: 10px;
-
     position: absolute;
   }
 
@@ -70,8 +69,13 @@
 <header>
   <div class="tilbage-container">
 
-    <button class="tilbage-knap">
-      <img ngSrc="/resources/images/back-arrow-icon.svg" alt="<-" height="16" width="16">
+    <button class="tilbage-knap" routerLink="/medarbejder">
+      <img
+        ngSrc="/resources/images/back-arrow-icon.svg"
+        alt="<-"
+        height="16"
+        width="16"
+      >
       Tilbage
     </button>
 
@@ -86,10 +90,12 @@
       Kundehenvendelse:
     </h3>
 
-    <textarea readonly
-              class="kunde-besked"
-              title="Kundens besked"
-              placeholder="Henter beskeden..."></textarea>
+    <textarea
+      readonly
+      class="kunde-besked"
+      title="Kundens besked"
+      placeholder="Henter beskeden..."
+    ></textarea>
   </div>
 
   <div class="svar-besked-container">
@@ -97,9 +103,11 @@
       Besvar kundehenvendelse:
     </h3>
 
-    <textarea class="svar-besked"
-              title="Skriv dit svar her"
-              placeholder="Svar..."></textarea>
+    <textarea
+      class="svar-besked"
+      title="Skriv dit svar her"
+      placeholder="Svar..."
+    ></textarea>
   </div>
 
   <button class="send-svar" style="margin-top: 20px">
