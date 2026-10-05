@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './profil.html',
   styleUrl: './profil.css',
 })
+
 export class Profil {
   navn = '';
   email = '';
@@ -29,5 +30,14 @@ export class Profil {
     localStorage.setItem('email', this.email);
 
     alert('Profil gemt');
+  }
+
+  private router = inject(Router);
+  tilbage() {
+    if(this.router.url.startsWith('/kunde')) {
+      this.router.navigate(['/kunde']);
+    } else if (this.router.url.startsWith('/medarbejder')) {
+      this.router.navigate(['/medarbejder']);
+    }
   }
 }

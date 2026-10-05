@@ -19,7 +19,6 @@ export const routes: Routes = [
   { path: 'minsag', component: MinSag },
   { path: 'nysag', component: NySag },
   { path: 'opretsag', component: OpretSag },
-  { path: 'profil', component: Profil },
   { path: 'support', component: Support },
   { path: 'svar', component: SvarKunde },
   { path: 'medarbejder/svar', component: SvarMedarbejder },
